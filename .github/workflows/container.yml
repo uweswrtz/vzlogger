@@ -1,23 +1,5 @@
-name: build
-
-# Controls when the workflow will run
-on: [workflow_dispatch, push]
-  # workflow_dispatch:
-  # push:
-  #   branches:
-  #     - 'main'
-  #     - 'dev'
-  #   tags:
-  #     - 'v*.*.*'
-  # pull_request:
-  #   branches:
-  #     - 'main'
-  #     - 'dev'
-
-# permissions are needed if pushing to ghcr.io
-# permissions: 
-#   packages: write
-
+name: Build Container
+on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
